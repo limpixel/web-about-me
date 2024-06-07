@@ -1,0 +1,201 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+
+    background: #18122B;
+
+    
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    
+    text-align: center;
+    padding: 10px 0;
+
+    background: rgba( 255, 255, 255, 0.05 );
+
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+    margin: 0 10px;
+    transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+    opacity: 1;
+    transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(235, 235, 235, 0.1); /* Mengatur bayangan yang lebih ringan */
+}
+
+
+ /* Image hero */
+ .container {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    overflow: hidden; /* Mengatasi masalah animasi border */
+    border-radius: 24px;
+}
+
+.container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menyesuaikan gambar dengan ukuran div */
+    transition: transform 0.3s; /* Efek transisi untuk gambar */
+    border-radius: 24px;
+}
+.container:hover img {
+    transform: scale(1.1); /* Efek zoom gambar pada hover */
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent;
+    transition: border-color 0.3s; /* Efek transisi untuk border */
+    border-radius: 24px;
+}
+
+/* Gambar latar belakang saat hover */
+.container:hover::before {
+    background-image: url('https://i.pinimg.com/474x/a9/8e/65/a98e6584d367fbcc86d3dd47b8e15707.jpg');
+    background-size: cover;
+    background-position: center;
+    border-color: rgba(255, 255, 255, 0.7); /* Ubah warna border saat hover */
+}
+
+.container:hover::after {
+    background-image: url('https://i.pinimg.com/474x/a9/8e/65/a98e6584d367fbcc86d3dd47b8e15707.jpg');
+    background-size: cover;
+    background-position: center;
+    border-color: rgba(0, 0, 0, 0.7); /* Ubah warna border saat hover */
+}
+
+.badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(195, 22, 22, 0.994);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container:hover .badge {
+    
+    opacity: 0;
+}
+
+.badge-istri {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(195, 22, 22, 0.994);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.badge-istri:hover .badge {
+    opacity: 0;
+    display: inline;
+}
+
+
+/* Detail about me */
+
+/* .container:hover::before {
+    border-color: red; /* Warna pertama saat hover */
+/* } */
+
+
+
+/* Button glass */
+/* Button Styles */
+.glass-btn {
+    background: rgba(255, 255, 255, 0.15); /* Background with transparency */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Glassmorphism shadow */
+    transition: all 0.3s ease-in-out; /* Transition effect */
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.25); /* Background with increased transparency on hover */
+    transform: translateY(-6px); /* Move the button up slightly on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow on hover */
+}
+
+/* About STYLE */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

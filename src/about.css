@@ -1,0 +1,87 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    background: #18122B;
+    color: #fff;
+}
+
+/* Container for main content and sidebar */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 280px; /* Adjusted height */
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); /* Center the sidebar vertically */
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    opacity: 1;
+}
+
+/* Main Content Styles */
+.content {
+    flex: 1;
+    margin-left: 300px; /* To account for the width of the fixed sidebar */
+    padding: 20px;
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
+
+.content section {
+    margin-bottom: 40px;
+    scroll-snap-align: start; /* Snap each section to the start */
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ /* Smooth Scroll */
+ html {
+    scroll-behavior: smooth;
+}
