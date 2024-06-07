@@ -183,6 +183,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Glassmorphism shadow */
     transition: all 0.3s ease-in-out; /* Transition effect */
+    text-decoration: none;
 }
 
 .glass-btn:hover {
